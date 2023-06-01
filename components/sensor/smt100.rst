@@ -21,16 +21,16 @@ The communication with this integration is done over a UART bus using a simple A
 
     # Example configuration entry
     uart:
-      tx_pin: TX
       rx_pin: RX
+      tx_pin: TX      
       baud_rate: 9600
 
     sensor:
       - platform: smt100
         counts:
             name: "Counts"
-        permittivity:
-            name: "Permittivity"
+        dielectric_constant:
+            name: "Dielectric Constant"
         temperature:
             name: "Temperature"
         moisture:
